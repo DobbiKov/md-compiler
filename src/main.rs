@@ -5,16 +5,13 @@ use std::{
 
 use clap::Parser;
 
-/// Simple program to greet a person
 #[derive(Parser, Debug)]
-#[command(version, about, long_about = None)]
+#[command(version, about = "Compiles .md file to .pdf", long_about = None)]
 struct Args {
-    /// Name of the person to greet
-    #[arg(short, long)]
+    #[arg(short, long, help = "input file (.md)")]
     input: PathBuf,
 
-    /// Number of times to greet
-    #[arg(short, long)]
+    #[arg(short, long, help = "output file (.pdf)")]
     output: Option<PathBuf>,
 }
 
