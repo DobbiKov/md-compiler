@@ -3,7 +3,7 @@
 A compiler for MarkDown files to PDF written in Rust.
 
 ## Requirements
-1. `typst` cli on the system
+1. [`typst`](https://github.com/typst/typst?tab=readme-ov-file#installation) cli on the system
 2. `cargo` and `rust`
 
 ## Installation
